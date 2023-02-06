@@ -8,26 +8,99 @@
 /* COMMON  */
 
 :root{
+    --border: 1px dashed black;
     /* header colors */
-    --pinkHeader:#EE82EE;
-    --blueHeader:#00008B;
-    --orangeHeader:#DAA520;
-    --azureHeader:#ADD8E6;
+    --Hpink:#EE82EE;
+    --Hblue:#00008B;
+    --Horange:#DAA520;
+    --Hazure:#ADD8E6;
     /* main colors*/
-    --Mainpink: #FFC0CB;
-    --blueMain:#1E90FF;
-    --greenMain:#228B22;
-    --greyMain:#D3D3D3;
+    --Mpink: #FFC0CB;
+    --Mblue:#1E90FF;
+    --Mgreen:#228B22;
+    --Mgrey:#D3D3D3;
     /* footer colors */
-    --pinkFooter:#FFB6C1;
-    --azureFooter:#20B2AA;
-    --salmonFooter:#F08080;
-    --aquaFooter:#7CF8CE;
-     
+    --Fpink:#FFB6C1;
+    --Fazure:#20B2AA;
+    --Fsalmon:#F08080;
+    --Faqua:#7CF8CE;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+    
+    
 }
 
+.wrapper-main{
+    height: 300px;
+    width: 60%;
+    /* debug */
+    border: var(--border);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background-color: inherit;
+    text-decoration: none;
+    border: none;
+}
+/* Header section */
+
 .header-nav{
-    background-color: --;
+    display: flex;
+    align-items: center;
+    background-color: var(--Hazure);
     width: 100%;
-    height: 100px;
+    height: 50px;
+    padding: 0.3rem 0;
+}
+
+.navbar{
+    display: flex;
+    /* debug */
+    background-color: var(--Horange);
+}
+
+.logo{
+    width: 20%;
+    border: var(--border);
+   
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.navbar .links{
+    text-align: center;
+    width: 60%;
+    /* debug */
+    border: var(--border);
+}
+.login{
+    width: 20%;
+    text-align: right;
+    /* debug */
+    border: var(--border);
+}
+
+/* /HeaderNavbar Styling */
+
+/* MainHeader Styling */
+.main-header{
+    background-color: var(--Hblue);
 }
