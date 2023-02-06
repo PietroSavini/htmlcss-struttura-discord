@@ -25,8 +25,11 @@
     --Fsalmon:#F08080;
     --Faqua:#7CF8CE;
 
-    /* Main Wrappers height */
-    --height: 250px;
+    /*  Wrappers heights */
+    --height-HM: 220px;
+    --height-M: 250px;
+    --height-M2: 400px;
+    --height-F: 280px;
 
 }
 
@@ -36,19 +39,48 @@ body{
 section{
     display: flex;
     justify-content: center;
+    /* debug */
+   
 }
+.main-section1{
+    background-color: var(--Mgrey);
+}
+
 .wrapper{
     width: 60%;
     margin: 0 auto;
 }
 
-.wrapper-main{
-    height: var(--height);
+.wrapper-header-main{
+    height: var(--height-HM);
     width: 60%;
     padding: 1.5rem 0 ;
     /* debug */
-    border: var(--border);
+   
 }
+.wrapper-main{
+    display: flex;
+    height: var(--height-M);
+    width: 60%;
+    margin: 1rem auto;
+    
+}
+.wrapper-main1{
+    display: flex;
+    flex-direction: row-reverse;
+    height: var(--height-M);
+    width: 60%;
+    margin: 1rem auto;
+   
+}
+
+.wrapper-main2{
+    display: flex;
+    height: var(--height-M2);
+    width: 60%;
+    margin: 1rem auto;
+}
+
 
 ul{
     list-style-type: none;
@@ -123,7 +155,7 @@ button{
 
 /* /HeaderNavbar Styling------------------------------------------------------------- */
 
-/* MainHeader Styling --------------------------------------------------------------- */
+/* Main-Header Styling --------------------------------------------------------------- */
 .main-header{
     background-color: var(--Hblue);
 }
@@ -138,6 +170,33 @@ button{
 }
 
 header hr{
-    height: 3px;
+    border: none;
+    height: 2px;
     background-color:var(--Hazure)
 }
+
+/* MAIN styling ------------------------------------------------------------------------- */
+
+/* first section with 3 rows */
+.box2{
+    background-color: var(--Mblue);
+    width: 100%;
+    /* debug */
+    border: var(--border);
+}
+.box3{
+    background-color: var(--Mpink);
+    width: 55%;
+    /* debug */
+    border: var(--border);
+}
+
+/* second section with bigger row */
+
+.box4{
+    width: 100%;
+    background-color: var(--Mgreen);
+    /* debug */
+    border: var(--border);
+}
+
