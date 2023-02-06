@@ -25,6 +25,9 @@
     --Fsalmon:#F08080;
     --Faqua:#7CF8CE;
 
+    /* Main Wrappers height */
+    --height: 250px;
+
 }
 
 body{
@@ -40,8 +43,9 @@ section{
 }
 
 .wrapper-main{
-    height: 300px;
+    height: var(--height);
     width: 60%;
+    padding: 1.5rem 0 ;
     /* debug */
     border: var(--border);
 }
@@ -67,9 +71,10 @@ button{
 .header-nav{
     display: flex;
     align-items: center;
-    background-color: var(--Hazure);
     width: 100%;
     height: 50px;
+    /* debug */
+    background-color: var(--Hazure);
     
 }
 
@@ -90,8 +95,8 @@ button{
     /* debug */
     border-right: var(--border);
     
-   
 }
+
 .navbar li{
     display: inline-block;
     margin-right: 5px;
@@ -111,8 +116,8 @@ button{
     width: 20%;
     text-align: right;
     padding-right: 0.3rem;
-    border-left: var(--border);
     /* debug */
+    border-left: var(--border);
     
 }
 
@@ -121,4 +126,18 @@ button{
 /* MainHeader Styling --------------------------------------------------------------- */
 .main-header{
     background-color: var(--Hblue);
+}
+
+.box1{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    background-color: var(--Hpink);
+    border: var(--border);
+}
+
+header hr{
+    height: 3px;
+    background-color:var(--Hazure)
 }
