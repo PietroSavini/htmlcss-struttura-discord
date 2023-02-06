@@ -1,0 +1,33 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON  */
+
+:root{
+    /* header colors */
+    --pinkHeader:#EE82EE;
+    --blueHeader:#00008B;
+    --orangeHeader:#DAA520;
+    --azureHeader:#ADD8E6;
+    /* main colors*/
+    --Mainpink: #FFC0CB;
+    --blueMain:#1E90FF;
+    --greenMain:#228B22;
+    --greyMain:#D3D3D3;
+    /* footer colors */
+    --pinkFooter:#FFB6C1;
+    --azureFooter:#20B2AA;
+    --salmonFooter:#F08080;
+    --aquaFooter:#7CF8CE;
+     
+}
+
+.header-nav{
+    background-color: --;
+    width: 100%;
+    height: 100px;
+}
